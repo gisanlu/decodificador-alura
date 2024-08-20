@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    /* colores del proyecto*/
+    --main-color: #65558f;
+    --text-color-2: #ffffff;
+}
+
+.header_section__icon {
+    margin: 2.5rem;
+}
+
+.codificador {
+    margin-left: 15rem;
+}
+
+.codificador__caja {
+    width: 45rem;
+    height: 30rem;
+    border-radius: 2%;
+    border: none;
+    background-color: #f0ebff;
+}
