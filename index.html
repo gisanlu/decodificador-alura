@@ -7,20 +7,23 @@
         <link rel="stylesheet" href="/styles/style.css" />
     </head>
     <body>
-        <header>
+        <header class="header__section">
             <img
                 class="header_section__icon"
                 src="/assets/alura.png"
                 alt="icono de alura"
             />
         </header>
-        <main>
+        <main class="proyecto">
             <section class="codificador">
-                <input
-                    type="text"
+                <textarea
+                    name="Texto a encriptar"
+                    id="caja"
                     class="codificador__caja"
-                    type="Ingrese texto aquí"
-                />
+                >
+Ingresa el texto aquí</textarea
+                >
+
                 <div>
                     <img src="/assets/error.svg" alt="icono de alerta" />
                     <p>Solo letras minúsculas y sin acentos</p>
@@ -30,7 +33,7 @@
                 <a href="">Desencriptar</a>
             </section>
 
-            <div>
+            <div class="desencriptar">
                 <img
                     src="/assets/Muñeco.png"
                     alt="ilustración de persona sentada con una lupa, observando"
@@ -39,7 +42,7 @@
                 <p>Ingresa el texto que desees encriptar o desencriptar</p>
             </div>
         </main>
-        <footer>
+        <footer class="foot">
             <h3>Proyecto de Alura desarrollado por Gisel Sánchez Lucero</h3>
         </footer>
     </body>
