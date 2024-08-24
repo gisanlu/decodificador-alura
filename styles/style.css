@@ -2,9 +2,12 @@
 
 :root {
     /* colores del proyecto*/
-    --main-color: #65558f;
+    --main-color: #0a3871;
     --secondary-color: #ffffff;
     --terciary-color: #f3f5fc;
+    --terciary-color-2: #495057;
+    --terciary-color-3: #343a40;
+    --terciary-color-4: #d8dfe8;
 
     /* texto del proyecto */
     --main-font: "Dosis", sans-serif;
@@ -16,43 +19,128 @@
 
 .header__section {
     background-color: var(--terciary-color);
+    height: 8rem;
+    width: auto;
 }
 .header_section__icon {
     margin: 2.5rem;
 }
 
 .proyecto {
-    height: 38rem;
+    height: auto;
+    width: auto;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
     background-color: var(--terciary-color);
+    display: flex;
 }
 
 .codificador {
     margin-left: 15rem;
-    width: 57.5rem;
+    margin-right: 8rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .codificador__caja {
-    font: var(--main-font);
-    font-size: 2rem;
-    max-width: 100%;
-    height: 25rem;
+    font-family: var(--main-font);
+    font-size: 2em;
+    width: 42.5rem;
+    height: 44.25rem;
+    resize: none;
+    background-color: var(--terciary-color);
+    color: var(--main-color);
+    border: none;
 }
 
+.codificador__caja:focus {
+    outline: none;
+}
+/* Aquí debe ir algo que haga que no aparezca la caja de texto cuando se escriba en ella,
+debe ser un tipo de clic como hoover(?) maybe*/
+
+.codificador__etiqueta {
+    font-family: var(--main-font);
+    font-size: 1.2em;
+    flex-direction: column;
+    margin-top: 0.5rem;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botones__style {
+    padding: 1.5rem;
+    margin-top: 1rem;
+    width: 20.5rem;
+    font-family: var(--main-font);
+    font-size: 1.5em;
+    border-radius: 1.5rem;
+}
+
+.boton-1 {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    border: none;
+}
+
+.boton-2 {
+    background-color: var(--terciary-color-4);
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
 .desencriptar {
-    height: 35rem;
+    height: 53.5rem;
     width: 25rem;
     background-color: var(--secondary-color);
     border-radius: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.desencriptar__img {
+    margin: 9.6rem 2rem 2rem;
+}
+
+.desencriptar__subtitulo {
+    font-family: var(--main-font);
+    font-size: 2.1rem;
+    color: var(--terciary-color-3);
+    text-align: center;
+}
+
+.desencriptar__parrafo {
+    font-family: var(--main-font);
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--terciary-color-2);
+    padding: 1rem;
+}
+
+.desencriptar__2 {
+    height: 53.5rem;
+    width: 25rem;
+    background-color: var(--secondary-color);
+    border-radius: 2rem;
+    margin-bottom: 2.5rem;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+}
+.texto__resultado {
+    font-family: var(--main-font);
+    color: var(--terciary-color-2);
+    font-size: 1.6em;
+    margin: 2rem 2.5rem;
 }
 
 .foot {
     padding: 1.5rem;
     text-align: center;
-    height: 1.5rem;
+    height: auto;
+    width: 100%;
     background-color: var(--main-color);
     color: var(--secondary-color);
-    font: var(--main-font);
+    font-family: var(--main-font);
+    font-size: 1rem;
 }

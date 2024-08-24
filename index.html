@@ -20,26 +20,39 @@
                     name="Texto a encriptar"
                     id="caja"
                     class="codificador__caja"
-                >
-Ingresa el texto aquí</textarea
+                    placeholder="Ingresa el texto aquí"
+                ></textarea>
+
+                <label class="codificador__etiqueta" for="caja"
+                    ><img src="/assets/error.svg" alt="icono de alerta" /> Solo
+                    letras minúsculas y sin acentos</label
                 >
 
-                <div>
-                    <img src="/assets/error.svg" alt="icono de alerta" />
-                    <p>Solo letras minúsculas y sin acentos</p>
-                </div>
-
-                <a href="">Encriptar</a>
-                <a href="">Desencriptar</a>
+                <section class="botones">
+                    <button class="botones__style boton-1">Encriptar</button>
+                    <button class="botones__style boton-2">Desencriptar</button>
+                </section>
             </section>
 
+            <!-- 
+            Esta es la imagen, no la borres bb 
             <div class="desencriptar">
                 <img
+                    class="desencriptar__img"
                     src="/assets/Muñeco.png"
                     alt="ilustración de persona sentada con una lupa, observando"
                 />
-                <h2>Ningún mensaje fue encontrado</h2>
-                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                <h2 class="desencriptar__subtitulo" >Ningún mensaje fue encontrado</h2>
+                <p class="desencriptar__parrafo">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div> -->
+
+            <div class="desencriptar__2">
+                <p class="texto__resultado">
+                    Ingresa el texto que desees encriptar o desencriptar
+                </p>
+                <button class="botones__style boton-2 boton-3-posicion">
+                    Copiar
+                </button>
             </div>
         </main>
         <footer class="foot">
