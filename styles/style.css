@@ -126,12 +126,17 @@ debe ser un tipo de clic como hoover(?) maybe*/
     box-sizing: content-box;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-.texto__resultado {
+.desencriptar__2_texto {
     font-family: var(--main-font);
     color: var(--terciary-color-2);
     font-size: 1.6em;
     margin: 2rem 2.5rem;
+    height: 79%;
+}
+.desencriptar__2_boton {
+    background-color: var(--secondary-color);
 }
 
 .foot {
