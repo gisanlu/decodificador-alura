@@ -96,10 +96,15 @@ debe ser un tipo de clic como hoover(?) maybe*/
     background-color: var(--secondary-color);
     border-radius: 2rem;
     margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .desencriptar__img {
     margin: 9.6rem 2rem 2rem;
+    height: auto;
+    width: auto;
 }
 
 .desencriptar__subtitulo {

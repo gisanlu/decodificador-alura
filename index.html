@@ -18,7 +18,7 @@
             <section class="codificador">
                 <textarea
                     name="Texto a encriptar"
-                    id="caja"
+                    id="caja-de-texto"
                     class="codificador__caja"
                     placeholder="Ingresa el texto aquí"
                 ></textarea>
@@ -29,34 +29,42 @@
                 >
 
                 <section class="botones">
-                    <button class="botones__style boton-1">Encriptar</button>
+                    <button
+                        onclick="encriptarMensaje()"
+                        class="botones__style boton-1"
+                    >
+                        Encriptar
+                    </button>
                     <button class="botones__style boton-2">Desencriptar</button>
                 </section>
             </section>
 
-            <!-- 
-            Esta es la imagen, no la borres bb 
             <div class="desencriptar">
                 <img
                     class="desencriptar__img"
                     src="/assets/Muñeco.png"
                     alt="ilustración de persona sentada con una lupa, observando"
                 />
-                <h2 class="desencriptar__subtitulo" >Ningún mensaje fue encontrado</h2>
-                <p class="desencriptar__parrafo">Ingresa el texto que desees encriptar o desencriptar</p>
-            </div> -->
-
-            <div class="desencriptar__2">
-                <p class="desencriptar__2_texto">
+                <h2 class="desencriptar__subtitulo">
+                    Ningún mensaje fue encontrado
+                </h2>
+                <p class="desencriptar__parrafo">
                     Ingresa el texto que desees encriptar o desencriptar
                 </p>
                 <button class="botones__style boton-2 desencriptar__2_boton">
                     Copiar
                 </button>
             </div>
+
+            <!-- <div class="desencriptar__2">
+                <p class="desencriptar__2_texto">
+                    Ingresa el texto que desees encriptar o desencriptar
+                </p>
+            </div> -->
         </main>
         <footer class="foot">
             <h3>Proyecto de Alura desarrollado por Gisel Sánchez Lucero</h3>
         </footer>
+        <script src="/app.js"></script>
     </body>
 </html>
