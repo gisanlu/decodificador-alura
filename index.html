@@ -30,30 +30,46 @@
 
                 <section class="botones">
                     <button
-                        onclick="encriptarMensaje()"
+                        onclick=" btnencriptarMensaje()"
                         class="botones__style boton-1"
                     >
                         Encriptar
                     </button>
-                    <button class="botones__style boton-2">Desencriptar</button>
+                    <button
+                        class="botones__style boton-2"
+                        onclick="btndesencriptarMensaje()"
+                    >
+                        Desencriptar
+                    </button>
                 </section>
             </section>
 
             <div class="desencriptar">
-                <img
-                    class="desencriptar__img"
-                    src="/assets/Muñeco.png"
-                    alt="ilustración de persona sentada con una lupa, observando"
-                />
-                <h2 class="desencriptar__subtitulo">
-                    Ningún mensaje fue encontrado
-                </h2>
-                <p class="desencriptar__parrafo">
-                    Ingresa el texto que desees encriptar o desencriptar
-                </p>
-                <button class="botones__style boton-2 desencriptar__2_boton">
-                    Copiar
-                </button>
+                <textarea
+                    name="mensaje"
+                    id="mensaje_codificado"
+                    class="desencriptar__mensaje"
+                    cols="20"
+                    rows="10"
+                ></textarea>
+                <div desencriptar__segundaArea>
+                    <img
+                        class="desencriptar__img"
+                        src="/assets/Muñeco.png"
+                        alt="ilustración de persona sentada con una lupa, observando"
+                    />
+                    <h2 class="desencriptar__subtitulo">
+                        Ningún mensaje fue encontrado
+                    </h2>
+                    <p class="desencriptar__parrafo">
+                        Ingresa el texto que desees encriptar o desencriptar
+                    </p>
+                    <button
+                        class="botones__style boton-2 desencriptar__2_boton"
+                    >
+                        Copiar
+                    </button>
+                </div>
             </div>
 
             <!-- <div class="desencriptar__2">

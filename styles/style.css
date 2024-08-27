@@ -100,9 +100,23 @@ debe ser un tipo de clic como hoover(?) maybe*/
     flex-direction: column;
     align-items: center;
 }
+.desencriptar__mensaje {
+    margin: 2rem;
+    width: 80%;
+    border: none;
+    resize: none;
+}
 
+.desencriptar__mensaje:focus {
+    outline: none;
+}
+
+.desencriptar__segundaArea {
+    box-sizing: content-box;
+    display: flex;
+}
 .desencriptar__img {
-    margin: 9.6rem 2rem 2rem;
+    margin: 0 2rem 2rem;
     height: auto;
     width: auto;
 }
@@ -142,6 +156,7 @@ debe ser un tipo de clic como hoover(?) maybe*/
 }
 .desencriptar__2_boton {
     background-color: var(--secondary-color);
+    margin: 2rem;
 }
 
 .foot {
